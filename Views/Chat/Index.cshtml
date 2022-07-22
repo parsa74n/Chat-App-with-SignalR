@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Chat Room";
+}
+
+    <div class="text-center">
+        <h1 class="display-4">چت روم</h1>
+        <br />
+    </div>
+    
+    <div class="row rounded-lg overflow-hidden shadow">
+   
+        <div class="col-12 px-0">
+            <div id="chatRoom" class="px-4 py-5 chat-box bg-white">
+            </div>
+
+            <div class="input-group ">
+                <input id="messageInput" type="text" placeholder="پیام خود را بنویسید..." aria-describedby="button-addon2" class="form-control rounded-0 border-0 py-4 bg-light" />
+                <div class="input-group-append">
+                    <button id="sendButton" type="button" class="btn btn-info"><i class="fa fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="https://kit.fontawesome.com/968648577f.js" crossorigin="anonymous"></script>
+<script src="~/js/chat.js"></script>
